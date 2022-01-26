@@ -35,6 +35,14 @@ body {
   left: 0;
 }
 /* -----------------------------header----------------------- */
+.header__top{
+  position: fixed;
+  background-color: #fff;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -73,6 +81,7 @@ body {
   background-position: center center;
   background-size: cover;
   font-family: "Montserrat", sans-serif;
+  padding-top: 100px;
 }
 .header__content-inner {
   display: flex;
@@ -342,8 +351,7 @@ body {
   background-position: center center;
   margin-bottom: 165px;
 }
-.portfolio__video-link {
-}
+
 .portfolio__numbers {
   display: flex;
   justify-content: space-around;
@@ -679,6 +687,9 @@ ul.footer__social {
   .pricing,
   .connection {
     padding: 75px 0;
+  }
+  .header__top-inner{
+    padding-bottom: 5px;
   }
   .about__text p {
     max-width: 100%;
